@@ -10,9 +10,9 @@ dotenv.config()
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
-var session = require("express-session");
+const session = require("express-session");
 
-var app = express();
+const app = express();
 
 app.use( 
   session({  

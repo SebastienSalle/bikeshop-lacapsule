@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "jest __tests__ --coverage"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -15,5 +16,9 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "stripe": "^8.197.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3"
   }
 }

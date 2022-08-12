@@ -162,8 +162,8 @@ router.post('/create-checkout-session', async (req, res) => {
     payment_method_types: ['card'],
     line_items: stripeItems,
     mode: 'payment',
-    success_url: 'http://localhost:3000/success',
-    cancel_url: 'http://localhost:3000/',
+    success_url: 'https://bikeshop-from-la-capsule.herokuapp.com/success',
+    cancel_url: 'https://bikeshop-from-la-capsule.herokuapp.com/',
   });
   
   res.redirect(303, session.url);
